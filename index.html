@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MVP-FullStackBasico</title>
+</head>
+
+<body>
+    <!--Cabeçalho da aplicação-->
+    <div class="menu">
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ADICIONAR</a></li>
+                <li><a href="#">BUSCAR</a></li>
+                <li><a href="#">CONTATO</a></li>
+    
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>Gerencidor de Acesso</h1>
+        </div>
+        <br>
+        <div class="subtitle">
+            <p>Gerencie seus acessos em um só lugar</p>
+        </div>
+    </div>
+
+    
+     <!--Listagem dos acessos-->
+    <section class="listaacessos">
+        <table id="tabeladeacessos">
+            <tr>
+                <th>Crachá</th>
+                <th>Nome</th>
+                <th>Área</th>
+                <th>Função</th>
+                <th><img src="img/2891491.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+     <!--Adição de novo acesso-->
+    <section class="newItem">
+        <input type="text" id="newcracha" placeholder="Digitar número do crachá">
+        <input type="text" id="newnome" placeholder="Nome do funcionário">
+        <input type="text" id="newarea" placeholder="Área do funcionário">
+        <input type="text" id="newfuncao" placeholder="Função do funcionário">
+        <span onclick="newItem()" class="addBtn">Registrar acesso</span>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
